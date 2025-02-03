@@ -10,12 +10,6 @@
 ### Run the following Commands in CloudShell
 
 ```
-export LANG=
-export LOCAL=
-export BQ_ROLE=
-export STORAGE_ROLE=
-```
-```
 curl -LO raw.githubusercontent.com/Titash-shil/Use-Machine-Learning-APIs-on-Google-Cloud-Challenge-Lab-GSP329/refs/heads/main/qwiklab_explorers_gsp329.sh
 
 sudo chmod +x qwiklab_explorers_gsp329.sh
