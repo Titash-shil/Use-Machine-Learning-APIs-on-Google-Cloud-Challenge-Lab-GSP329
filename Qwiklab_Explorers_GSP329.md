@@ -10,11 +10,11 @@
 ### Run the following Commands in CloudShell
 
 ```
-curl -LO raw.githubusercontent.com/Titash-shil/Build-a-Data-Warehouse-with-BigQuery-Challenge-Lab-GSP340/refs/heads/main/qwiklab_explorers_gsp340.sh
+curl -LO raw.githubusercontent.com/Titash-shil/Use-Machine-Learning-APIs-on-Google-Cloud-Challenge-Lab-GSP329/refs/heads/main/qwiklab_explorers_gsp329.sh
 
-sudo chmod +x qwiklab_explorers_gsp340.sh
+sudo chmod +x qwiklab_explorers_gsp329.sh
 
-./qwiklab_explorers_gsp340.sh
+./qwiklab_explorers_gsp329.sh
 ```
 
 ---
