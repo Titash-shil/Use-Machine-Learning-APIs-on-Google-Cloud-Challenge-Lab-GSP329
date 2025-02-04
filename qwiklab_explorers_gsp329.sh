@@ -2,18 +2,15 @@
 
 
 # Set text styles
-RED=`tput setaf 1`
-GREEN=`tput setaf 2`
-YELLOW=`tput setaf 3`
-BLUE=`tput setaf 4`
+GREEN=$(tput setaf 2)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
-echo "Please set the below values correctly from your lab instruction"
-read -p "${RED}${BOLD}Enter the LANGUAGE: ${RESET}" LANGUAGE
+echo "Please set the below values correctly"
+read -p "${GREEN}${BOLD}Enter the LANGUAGE: ${RESET}" LANGUAGE
 read -p "${GREEN}${BOLD}Enter the LOCALE: ${RESET}" LOCALE
-read -p "${YELLOW}${BOLD}Enter the BIGQUERY_ROLE: ${RESET}" BIGQUERY_ROLE
-read -p "${BLUE}${BOLD}Enter the CLOUD_STORAGE_ROLE: ${RESET}" CLOUD_STORAGE_ROLE
+read -p "${GREEN}${BOLD}Enter the BIGQUERY_ROLE: ${RESET}" BIGQUERY_ROLE
+read -p "${GREEN}${BOLD}Enter the CLOUD_STORAGE_ROLE: ${RESET}" CLOUD_STORAGE_ROLE
 
 # Export variables after collecting input
 export LANGUAGE LOCALE BIGQUERY_ROLE CLOUD_STORAGE_ROLE
@@ -39,7 +36,7 @@ gcloud iam service-accounts keys create sample-sa-key.json --iam-account sample-
 
 export GOOGLE_APPLICATION_CREDENTIALS=${PWD}/sample-sa-key.json
 
-wget https://raw.githubusercontent.com/Titash-shil/Use-Machine-Learning-APIs-on-Google-Cloud-Challenge-Lab-GSP329/refs/heads/main/analyze-images-v2.py
+wget https://raw.githubusercontent.com/Techcps/Google-Cloud-Skills-Boost/master/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%3A%20Challenge%20Lab/analyze-images-v2.py
 
 sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
 
