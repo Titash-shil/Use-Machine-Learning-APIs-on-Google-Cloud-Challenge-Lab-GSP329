@@ -2,16 +2,16 @@
 
 
 # Set text styles
-GREEN=`tput setaf 2`
 BLUE=`tput setaf 4`
+MAGENTA=`tput setaf 5`
 CYAN=`tput setaf 6`
 WHITE=`tput setaf 7`
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
 echo "Please set the below values correctly from your lab instruction"
-read -p "${GREEN}${BOLD}Enter the LANGUAGE: ${RESET}" LANGUAGE
-read -p "${BLUE}${BOLD}Enter the LOCALE: ${RESET}" LOCALE
+read -p "${BLUE}${BOLD}Enter the LANGUAGE: ${RESET}" LANGUAGE
+read -p "${MAGENTA}${BOLD}Enter the LOCALE: ${RESET}" LOCALE
 read -p "${CYAN}${BOLD}Enter the BIGQUERY_ROLE: ${RESET}" BIGQUERY_ROLE
 read -p "${WHITE}${BOLD}Enter the CLOUD_STORAGE_ROLE: ${RESET}" CLOUD_STORAGE_ROLE
 
