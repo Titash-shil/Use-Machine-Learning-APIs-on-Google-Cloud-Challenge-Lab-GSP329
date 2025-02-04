@@ -36,13 +36,13 @@ gcloud iam service-accounts keys create sample-sa-key.json --iam-account sample-
 
 export GOOGLE_APPLICATION_CREDENTIALS=${PWD}/sample-sa-key.json
 
-wget https://raw.githubusercontent.com/Techcps/Google-Cloud-Skills-Boost/master/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%3A%20Challenge%20Lab/analyze-images-v2.py
+wget https://raw.githubusercontent.com/Titash-shil/Use-Machine-Learning-APIs-on-Google-Cloud-Challenge-Lab-GSP329/refs/heads/main/qwiklab_explorers_analyze-images_-v2.py
 
-sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
+sed -i "s/'en'/'${LOCAL}'/g" qwiklab_explorers_analyze-images_-v2.py
 
-python3 analyze-images-v2.py
+python3 qwiklab_explorers_analyze-images_-v2.py
 
-python3 analyze-images-v2.py $DEVSHELL_PROJECT_ID $DEVSHELL_PROJECT_ID
+python3 qwiklab_explorers_analyze-images_-v2.py $DEVSHELL_PROJECT_ID $DEVSHELL_PROJECT_ID
 
 bq query --use_legacy_sql=false "SELECT locale,COUNT(locale) as lcount FROM image_classification_dataset.image_text_detail GROUP BY locale ORDER BY lcount DESC"
 
