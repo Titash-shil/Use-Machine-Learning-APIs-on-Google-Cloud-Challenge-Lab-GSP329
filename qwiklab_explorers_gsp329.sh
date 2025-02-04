@@ -2,10 +2,10 @@
 
 
 # Set text styles
-GREEN=`tput setaf 2`
-BLUE=`tput setaf 4`
-MAGENTA=`tput setaf 5`
-CYAN=`tput setaf 6`
+GREEN=`tput setaf 0`
+BLUE=`tput setaf 1`
+MAGENTA=`tput setaf 2`
+CYAN=`tput setaf 3`
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
