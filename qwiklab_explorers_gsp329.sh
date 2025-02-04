@@ -3,14 +3,17 @@
 
 # Set text styles
 GREEN=`tput setaf 2`
+BLUE=`tput setaf 4`
+MAGENTA=`tput setaf 5`
+CYAN=`tput setaf 6`
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
 echo "Please set the below values correctly from your lab instruction"
 read -p "${GREEN}${BOLD}Enter the LANGUAGE: ${RESET}" LANGUAGE
-read -p "${GREEN}${BOLD}Enter the LOCALE: ${RESET}" LOCALE
-read -p "${GREEN}${BOLD}Enter the BIGQUERY_ROLE: ${RESET}" BIGQUERY_ROLE
-read -p "${GREEN}${BOLD}Enter the CLOUD_STORAGE_ROLE: ${RESET}" CLOUD_STORAGE_ROLE
+read -p "${BLUE}${BOLD}Enter the LOCALE: ${RESET}" LOCALE
+read -p "${MAGENTA}${BOLD}Enter the BIGQUERY_ROLE: ${RESET}" BIGQUERY_ROLE
+read -p "${CYAN}${BOLD}Enter the CLOUD_STORAGE_ROLE: ${RESET}" CLOUD_STORAGE_ROLE
 
 # Export variables after collecting input
 export LANGUAGE LOCALE BIGQUERY_ROLE CLOUD_STORAGE_ROLE
